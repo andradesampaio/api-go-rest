@@ -70,6 +70,13 @@ A tabela `personalidade` possui os seguintes campos:
 - `profissao`: a profissão ou papel da personalidade.
 - `historia`: uma breve descrição ou história da personalidade.
 
+## Subindo aplicacao web
+Entrar na pasta frontend-react-personalidades-master e executar os comandos abaixo:
+```bash
+npm install
+npm start
+```
+
 ## Contribuindo
 
 Contribuições são bem-vindas! Por favor, leia as diretrizes de contribuição antes de enviar um pull request.
