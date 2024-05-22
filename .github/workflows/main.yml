@@ -9,7 +9,7 @@ on:
 jobs:
 
   test:
-    runs-on: ${{ matrix.os_version}}
+    runs-on: ${{ matrix.os_version }}
     strategy:
       matrix:
         go_version: ['1.22.0', '1.22.3', '>=1.22']
@@ -34,10 +34,7 @@ jobs:
   
   build:
     needs: test
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: ['ubuntu-latest', 'ubuntu-18.04']
+    runs-on: ${{ matrix.os_version }}
     steps:
     - uses: actions/checkout@v3
     - name: Build
